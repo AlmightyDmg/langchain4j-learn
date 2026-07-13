@@ -1,0 +1,20 @@
+server.port=8001
+
+# 大模型对话中文乱码UTF8编码处理
+server.servlet.encoding.enabled=true
+server.servlet.encoding.force=true
+server.servlet.encoding.charset=UTF-8
+
+spring.application.name=LANGCHAIN4J-01HelloWorld
+
+# ========== LangChain4j OpenAI 配置 ==========
+# 使用 OpenAI 协议兼容的模型（Ollama、DeepSeek、通义千问等）
+# 本地 Ollama 示例
+langchain4j.openai.api-key=ollama
+langchain4j.openai.base-url=http://localhost:11434/v1
+langchain4j.openai.model-name=qwen2.5:latest
+
+# 线上 DeepSeek 示例（取消注释使用）
+# langchain4j.openai.api-key=your-deepseek-api-key
+# langchain4j.openai.base-url=https://api.deepseek.com/v1
+# langchain4j.openai.model-name=deepseek-chat
